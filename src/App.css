@@ -1,38 +1,82 @@
+html {
+  height: 100%;
+}
 .App {
+  height: 100%;
+}
+.user {
   text-align: center;
+  width: 260px;
+  border: 1px solid #707070;
+  border-radius: 8px;
+  height: 380px;
+  overflow: auto;
+  position: relative;
+  float: right;
+  margin-right: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-list {
+  margin: 0;
+  padding: 10px;
+  height: 235px;
+  overflow: auto;
+  float: right;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-list li:nth-child(odd) {
+  background-color: #ff674d;
+  color: #ffffff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.user-list li:nth-child(even) {
+  background-color: #EEEEEE;
+  color: #000000;
+  margin-right: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+.user-list li {
+  list-style-type: none;
+  text-align: right;
+    font-size: 16px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    min-width: 120px;
+    margin-bottom: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputBox {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid #707070;
+}
+.user-info{
+  height: 50px;
+  background-color: #ff674d;
+  color: #ffffff;
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.inputBox input {
+  height: 40px;
+  border: none;
+  outline: none;
+  width: 93%;
+  padding: 0 8px;
+}
+.user-info .avtar{
+  width: 30px;
+  border-radius: 20px;
+  margin-top: 9px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.chatStatus{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+.chatStatus img{
+  width: 100%;
+  height: 100;
 }
